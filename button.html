@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <h1>Skibidi toilet rizz</h1>
+    <button id="button" onclick="changeColor('Red')"> Red</button>
+    <button id="button" onclick="changeColor('Yellow')">Yellow</button>
+    <button id="button" onclick="changeColor('Blue')">Blue</button>
+    <button id="button" onclick="changeColor('Purple')">Purple</button>
+    <button id="button" onclick="changeColor('Green')">Green</button>
+    <button id="button" onclick="changeColor('White')">White</button>
+    <h2 id="name">Color you choose is shown here la</h2>
+    <script>
+      const name = document.getElementById("name");
+      const body = document.getElementById("body");
+      function changeColor(Name) {
+        body.style.backgroundColor = Name;
+        name.innerHTML = Name;
+      }
+    //   function changeStyle(Name) {
+    //     body.style.color = "Red";
+    //     name.innerHTML = Name;
+    //   }
+
+      setTimeout(function () {
+        console.log("callback funtion");
+      }, 5000);
+      setInterval(function(){
+        body.style.opacity=0.5;
+    console.log("callback funtion");        
+      }, 1000);
+    </script>
+  </body>
+</html>
